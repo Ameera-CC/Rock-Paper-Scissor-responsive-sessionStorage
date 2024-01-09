@@ -1,0 +1,58 @@
+<!--
+1. In this html we are using text on webpage to display the  moves, result, score.
+2. Added a progress button to show the last progress.After reset you will not get saved progress, this will restart the game.
+3.Addig CSS.
+4.Added JS page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors </title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <div class="center-div">
+
+        <div class="bg-div">
+            <div class="selection-div">
+                <button class="selection-btn"
+                    onclick="playGame('rock')">
+                    <img src="./images/rock-emoji.png" alt="" class="selection-icon">
+                </button> 
+                <button class="selection-btn"
+                    onclick="playGame('paper')">
+                    <img src="./images/paper-emoji.png" alt="" class="selection-icon">
+                </button>
+                <button class="selection-btn"
+                    onclick="playGame('scissor')">
+                    <img src="./images/scissor-emoji.png" alt="" class="selection-icon">
+                </button>
+            </div>
+            <div>
+                <p class="js-result display-result"></p>
+                <p class="js-selection display-selection"></p>
+                <p class="js-score display-score" ></p>    
+            </div>
+            <div class="control-div">
+                <button class="control-btn" onclick="resetScore()"> 
+                    Restart
+                </button>  
+        
+                <button  class="control-btn" onclick="displayResultOption()"> 
+                    Saved Progress
+                </button> 
+        
+            </div>
+        </div>
+
+
+
+    </div>
+<script src="./js/index.js"></script>
+
+</body>
+</html>
